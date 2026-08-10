@@ -1,5 +1,4 @@
 # Data Mapping
-
 ## Objective
 
 Map the source sales data to the appropriate Salesforce objects and fields before configuring and loading the CRM data.
