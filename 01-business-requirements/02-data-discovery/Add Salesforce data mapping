@@ -1,0 +1,39 @@
+# Data Mapping
+
+## Objective
+
+Map the source sales data to the appropriate Salesforce objects and fields before configuring and loading the CRM data.
+
+## Source-to-Salesforce Mapping
+
+| Source Data | Salesforce Object | Salesforce Field |
+|---|---|---|
+| Account Name | Account | Account Name |
+| Contact Information | Contact | Contact fields |
+| Opportunity Name | Opportunity | Opportunity Name |
+| Opportunity Owner | Opportunity | Opportunity Owner |
+| Account | Opportunity | Account Name |
+| Stage | Opportunity | Stage |
+| Amount | Opportunity | Amount |
+| Probability | Opportunity | Probability |
+| Close Date | Opportunity | Close Date |
+| Product Name | Product | Product Name |
+| Product | Opportunity Product | Product |
+| Quantity | Opportunity Product | Quantity |
+| Sales Price | Opportunity Product | Sales Price |
+| Total Price | Opportunity Product | Total Price |
+
+## Salesforce Object Relationships
+
+The CRM structure was designed around the following relationships:
+
+```text
+Account
+   │
+   ├── Contacts
+   │
+   └── Opportunities
+          │
+          └── Opportunity Products
+                    │
+                    └── Products
